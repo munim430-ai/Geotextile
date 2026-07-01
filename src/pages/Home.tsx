@@ -1,20 +1,27 @@
-import { useState } from 'react'
-import '../App.css'
+import { useEffect } from 'react'
+import Hero from '../sections/Hero'
+import Challenge from '../sections/Challenge'
+import Solutions from '../sections/Solutions'
+import WhyChooseUs from '../sections/WhyChooseUs'
+import ResourcesImpact from '../sections/ResourcesImpact'
+import CTABanner from '../sections/CTABanner'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function Home() {
-  const [count, setCount] = useState(0)
+  useScrollReveal()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-    </>
+    <main>
+      <Hero />
+      <Challenge />
+      <Solutions />
+      <WhyChooseUs />
+      <ResourcesImpact />
+      <CTABanner />
+    </main>
   )
 }
