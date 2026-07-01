@@ -66,7 +66,7 @@ export default function About() {
               <h2 className="section-title mb-6">From Observation to Action</h2>
               <div className="space-y-4 text-[#333] leading-relaxed">
                 <p>
-                  Founded by Hasibul Munim, HM Geotextile Solutions was born from a simple
+                  Founded by Hasibul Munim, HH Geotextile Solutions was born from a simple
                   observation: Bangladesh's booming infrastructure sector needed reliable,
                   cost-effective geotextile sourcing — but contractors were paying inflated
                   prices through multiple middlemen.

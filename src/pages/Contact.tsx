@@ -153,17 +153,8 @@ export default function Contact() {
                 {/* WeChat QR */}
                 <div className="p-4 border border-black/10 bg-white">
                   <div className="text-xs uppercase tracking-wider text-[#888] mb-3">WeChat QR Code</div>
-                  <div className="w-32 h-32 bg-[#f1f0ee] flex items-center justify-center">
-                    <svg viewBox="0 0 100 100" className="w-24 h-24">
-                      <rect x="10" y="10" width="80" height="80" fill="none" stroke="#000" strokeWidth="2" />
-                      <rect x="20" y="20" width="25" height="25" fill="#0f2e4a" />
-                      <rect x="55" y="20" width="25" height="25" fill="#0f2e4a" />
-                      <rect x="20" y="55" width="25" height="25" fill="#0f2e4a" />
-                      <rect x="55" y="55" width="10" height="10" fill="#ff6600" />
-                      <rect x="70" y="55" width="10" height="10" fill="#ff6600" />
-                      <rect x="55" y="70" width="10" height="10" fill="#ff6600" />
-                      <text x="50" y="95" textAnchor="middle" fill="#888" fontSize="8">WeChat</text>
-                    </svg>
+                  <div className="w-32 h-32 bg-[#f1f0ee] flex items-center justify-center overflow-hidden">
+                    <img src="/images/wechat-qr.png" alt="WeChat QR Code" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>

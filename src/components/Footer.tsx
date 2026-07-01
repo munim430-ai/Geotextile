@@ -137,20 +137,11 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* WeChat QR placeholder */}
+            {/* WeChat QR */}
             <div className="mt-6 p-4 bg-white/5 rounded">
               <p className="text-white/40 text-xs mb-2">WeChat: hasibul_munim</p>
-              <div className="w-20 h-20 bg-white/10 flex items-center justify-center rounded">
-                <svg viewBox="0 0 100 100" className="w-16 h-16 opacity-60">
-                  <rect x="10" y="10" width="80" height="80" fill="none" stroke="currentColor" strokeWidth="2" />
-                  <rect x="20" y="20" width="25" height="25" fill="white" />
-                  <rect x="55" y="20" width="25" height="25" fill="white" />
-                  <rect x="20" y="55" width="25" height="25" fill="white" />
-                  <rect x="55" y="55" width="10" height="10" fill="white" />
-                  <rect x="70" y="55" width="10" height="10" fill="white" />
-                  <rect x="55" y="70" width="10" height="10" fill="white" />
-                  <text x="50" y="95" textAnchor="middle" fill="white" fontSize="8">WeChat</text>
-                </svg>
+              <div className="w-20 h-20 bg-white/10 flex items-center justify-center rounded overflow-hidden">
+                <img src="/images/wechat-qr.png" alt="WeChat QR Code" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -161,7 +152,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-xs">
-            &copy; {new Date().getFullYear()} HM Geotextile Solutions. All rights reserved.
+            &copy; {new Date().getFullYear()} HH Geotextile Solutions. All rights reserved.
           </p>
           <div className="flex gap-6">
             <span className="text-white/40 text-xs cursor-default">Privacy Policy</span>

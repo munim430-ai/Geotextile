@@ -53,7 +53,7 @@ export default function Navigation() {
                   scrolled ? 'text-black' : 'text-white'
                 }`}
               >
-                HM Geotextile
+                HH Geotextile
               </span>
             </Link>
 
