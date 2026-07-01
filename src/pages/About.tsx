@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Shield, Lightbulb, Clock, Handshake, Mail, Phone, MapPin } from 'lucide-react'
+import { Shield, Lightbulb, Clock, Handshake, Mail, Phone, MapPin, Briefcase } from 'lucide-react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const values = [
@@ -193,6 +193,70 @@ export default function About() {
                   Connect on WhatsApp
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Marketing Executive */}
+      <section className="py-20 lg:py-32 bg-[#f1f0ee]">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div className="lg:col-span-8 scroll-reveal">
+              <div className="caption-label text-[#ff6600] mb-4">Leadership</div>
+              <h2 className="section-title mb-2">Saiful Islam</h2>
+              <p className="text-lg text-[#888] mb-6">
+                Marketing Executive
+              </p>
+              <div className="flex items-center gap-3 mb-6">
+                <Briefcase size={18} className="text-[#ff6600]" />
+                <span className="text-sm font-medium text-black">19 Years of Industry Experience</span>
+              </div>
+              <div className="space-y-4 text-[#333] leading-relaxed max-w-2xl">
+                <p>
+                  With nearly two decades of hands-on experience in Bangladesh's construction
+                  and infrastructure materials sector, Saiful Islam brings unparalleled market
+                  wisdom to HH Geotextile Solutions. His deep understanding of client psychology,
+                  tender processes, and supply chain dynamics has been instrumental in building
+                  lasting relationships with contractors, developers, and government agencies.
+                </p>
+                <p>
+                  He specializes in strategic client acquisition, project consultation, and
+                  ensuring seamless communication between technical teams and field operations.
+                  His advisory approach helps clients make informed decisions — saving both
+                  time and money on every project.
+                </p>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-6">
+                <div className="flex items-center gap-3">
+                  <Phone size={18} className="text-[#ff6600]" />
+                  <span className="text-sm text-[#333]">+880 1941 646 278</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <MapPin size={18} className="text-[#ff6600]" />
+                  <span className="text-sm text-[#333]">Dhaka, Bangladesh</span>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <a
+                  href="https://wa.me/+8801941646278"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  Connect on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div className="lg:col-span-4 scroll-reveal">
+              <img
+                src="/images/saiful.jpg"
+                alt="Saiful Islam - Marketing Executive"
+                className="w-full max-w-sm mx-auto"
+              />
             </div>
           </div>
         </div>
