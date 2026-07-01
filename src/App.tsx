@@ -13,10 +13,7 @@ const Resources = lazy(() => import('./pages/Resources'))
 const Contact = lazy(() => import('./pages/Contact'))
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
+  useEffect(() => { window.scrollTo(0, 0) }, [])
   return (
     <div className="min-h-screen bg-warm">
       <Navigation />

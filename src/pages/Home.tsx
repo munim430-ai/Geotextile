@@ -9,11 +9,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function Home() {
   useScrollReveal()
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
+  useEffect(() => { window.scrollTo(0, 0) }, [])
   return (
     <main>
       <Hero />
