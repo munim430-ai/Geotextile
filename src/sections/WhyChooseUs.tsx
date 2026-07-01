@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next'
-import { DollarSign, Award, ShieldCheck, Clock, HeadphonesIcon } from 'lucide-react'
+import { DollarSign, Award, Building2, ShieldCheck } from 'lucide-react'
 
 export default function WhyChooseUs() {
   const { t } = useTranslation()
+
   const reasons = [
-    { icon: DollarSign, title: t('whyUs.reasons.0.title'), desc: t('whyUs.reasons.0.desc') },
-    { icon: Award, title: t('whyUs.reasons.1.title'), desc: t('whyUs.reasons.1.desc') },
-    { icon: ShieldCheck, title: t('whyUs.reasons.3.title'), desc: t('whyUs.reasons.3.desc') },
-    { icon: Clock, title: t('whyUs.reasons.4.title'), desc: t('whyUs.reasons.4.desc') },
-    { icon: HeadphonesIcon, title: t('whyUs.reasons.5.title'), desc: t('whyUs.reasons.5.desc') },
+    { icon: DollarSign, title: t('whyUs.feature1.title'), desc: t('whyUs.feature1.desc') },
+    { icon: Award, title: t('whyUs.feature2.title'), desc: t('whyUs.feature2.desc') },
+    { icon: ShieldCheck, title: t('whyUs.feature3.title'), desc: t('whyUs.feature3.desc') },
+    { icon: Building2, title: t('whyUs.feature4.title'), desc: t('whyUs.feature4.desc') },
   ]
 
   return (
@@ -19,15 +19,18 @@ export default function WhyChooseUs() {
           <h2 className="section-title mb-4">{t('whyUs.title')}</h2>
           <p className="text-lg text-[#333] max-w-2xl mx-auto">{t('whyUs.description')}</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-black/10">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {reasons.map((r, i) => (
-            <div key={i} className="scroll-reveal bg-white p-8 lg:p-10 group hover:bg-[#0f2e4a] transition-colors duration-500"
+            <div key={i} className="scroll-reveal flex items-start gap-6 p-8 border border-black/10 hover:border-[#ff6600]/30 transition-colors duration-300"
               style={{ transitionDelay: `${i * 0.1}s` }}>
-              <div className="w-12 h-12 flex items-center justify-center border border-[#ff6600] mb-6 group-hover:bg-[#ff6600] transition-colors duration-500">
-                <r.icon size={24} className="text-[#ff6600] group-hover:text-white transition-colors duration-500" />
+              <div className="w-14 h-14 flex-shrink-0 flex items-center justify-center border border-[#ff6600]">
+                <r.icon size={28} className="text-[#ff6600]" />
               </div>
-              <h3 className="text-lg font-medium text-black group-hover:text-white mb-3 transition-colors duration-500">{r.title}</h3>
-              <p className="text-sm text-[#333] group-hover:text-white/70 leading-relaxed transition-colors duration-500">{r.desc}</p>
+              <div>
+                <h3 className="text-xl font-medium text-black mb-2">{r.title}</h3>
+                <p className="text-sm text-[#333] leading-relaxed">{r.desc}</p>
+              </div>
             </div>
           ))}
         </div>

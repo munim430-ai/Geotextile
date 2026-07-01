@@ -34,10 +34,7 @@ function FloatingIcon({ index }: { index: number }) {
   }, [])
 
   return (
-    <div ref={ref} className="absolute" style={{
-      left: style.left, top: style.top,
-      animation: `floatUp ${style.animDuration} ease-in-out ${style.animDelay} infinite alternate`
-    }}>
+    <div ref={ref} className="absolute" style={{ left: style.left, top: style.top, animation: `floatUp ${style.animDuration} ease-in-out ${style.animDelay} infinite alternate` }}>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-8 h-8 md:w-12 md:h-12 text-white/30">
         <path d={style.iconPath} />
       </svg>
@@ -62,10 +59,7 @@ export default function Challenge() {
           <h2 className="section-title text-white mb-8">{t('challenge.title')}</h2>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-16">{t('challenge.description')}</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
-            {[{ val: '50+', label: t('challenge.counter1') },
-              { val: '12K+', label: t('challenge.counter2') },
-              { val: '15-30', label: t('challenge.counter3') },
-              { val: '3', label: t('challenge.counter4') }].map((c, i) => (
+            {[{ val: '50+', label: t('challenge.counter1') }, { val: '12K+', label: t('challenge.counter2') }, { val: '15-30', label: t('challenge.counter3') }, { val: '3', label: t('challenge.counter4') }].map((c, i) => (
               <div key={i} className="border border-white/10 p-6">
                 <div className="text-3xl md:text-5xl font-light text-[#ff6600] mb-2">{c.val}</div>
                 <div className="text-xs uppercase tracking-wider text-white/40">{c.label}</div>

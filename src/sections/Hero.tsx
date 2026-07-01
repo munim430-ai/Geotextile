@@ -52,9 +52,7 @@ export default function Hero() {
                 </h1>
                 <p className="text-lg text-[#333] mb-8 leading-relaxed">{t('hero.description')}</p>
                 <div className="flex flex-wrap gap-4 mb-10">
-                  <Link to="/products" className="btn-primary">
-                    {t('hero.explore')} <ArrowRight size={16} className="ml-2" />
-                  </Link>
+                  <Link to="/products" className="btn-primary">{t('hero.explore')} <ArrowRight size={16} className="ml-2" /></Link>
                   <Link to="/contact" className="btn-outline">{t('hero.quote')}</Link>
                 </div>
                 <div className="grid grid-cols-2 gap-4 pt-6 border-t border-black/10">
