@@ -1,0 +1,16 @@
+Hangeul-Students/  (Shared Google Drive)
+└── [Intake]/                         e.g. 2026-Spring
+    └── [Program]/                    KLP | EAP | Bachelor | Master | PhD
+        └── [StudentID]_[Name]/       e.g. HKV2026-0125_MdRakibHasan
+            ├── 01-Identity/                 Passport, NID, BirthCert, Photo
+            ├── 02-Academic/                 Certificates, Transcripts
+            ├── 03-Language/                 IELTS
+            ├── 04-SOP-LOR/                  SOP, Recommendation, Proposal
+            ├── 05-Financial/                BankStatement, Solvency, eTIN, TradeLicense
+            ├── 06-Family/                   FamilyRelation, Guardian docs
+            ├── 07-Translated-Notarized/     Translated / Notarized / Attested
+            ├── 08-Payment/                  PaymentProof, Receipt
+            └── 09-University-Submission/    Application, Offer, Visa
+
+FILE NAMING: [StudentID]_[FullName]_[DocumentType]_[Version].[ext]
+Example:     HKV2026-0125_MdRakibHasan_Passport_v1.pdf
